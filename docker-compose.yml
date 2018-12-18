@@ -1,0 +1,22 @@
+networks:
+  default:
+    external: next_project
+services:
+  hope:
+    command:
+      - watch
+    container_name: hope-api
+    cpus: 1.5
+    entrypoint:
+      - /bin/sh
+      - -c
+    environment:
+    - HOPE_VAR=test
+    image: next_project/hope:latest
+    mem_limit: 2560m
+    ports:
+      - =:5050
+    volumes:
+      - .:/
+    working_dir: /
+version: "2.2"
