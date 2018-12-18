@@ -1,1 +1,1 @@
-web: gunicorn next_project.wsgi
+web: gunicorn hope.wsgi
