@@ -26,7 +26,7 @@ SECRET_KEY = '2)ydo-om9%69(s80)fn74f8y83nfa=y$5o)u9#f!pby0b@$313'
 DEBUG = True
 
 #ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['next-project-amir-2.herokuapp.com']
+ALLOWED_HOSTS = ['next-project-amir-2.herokuapp.com', 'localhost']
 
 # Application definition
 
@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'next_project.urls'
+ROOT_URLCONF = 'hope.urls'
 
 TEMPLATES = [
     {
@@ -69,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'next_project.wsgi.application'
+WSGI_APPLICATION = 'hope.wsgi.application'
 
 
 # Database
