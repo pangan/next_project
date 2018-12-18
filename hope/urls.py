@@ -17,8 +17,19 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include, url
 
+from hope.views import index
+
+from django.conf import settings
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    url(r'^', include('hope.apps.main.urls'))
+
+    url(r'^admin/', admin.site.urls),
+    url(r'^$', index),
+    url(r'^app/', include('hope.apps.main.urls')),
 ]
+
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns = [
+        url(r'^__debug__/', include(debug_toolbar.urls)),
+    ] + urlpatterns

@@ -5,5 +5,5 @@ from hope.apps.main import views as main_views
 
 
 urlpatterns = [
-    url(r'^', main_views.index, name='index'),
+    url(r'^$', main_views.index),
 ]
