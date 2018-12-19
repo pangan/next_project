@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.conf.urls import include, url
+from django.conf.urls import include, url, static
 
 from hope.views import index
 
@@ -26,7 +26,8 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', index),
     url(r'^app/', include('hope.apps.main.urls')),
-]
+] + static.static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
 
 if settings.DEBUG:
     import debug_toolbar
