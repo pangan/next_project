@@ -26,7 +26,7 @@ SECRET_KEY = '2)ydo-om9%69(s80)fn74f8y83nfa=y$5o)u9#f!pby0b@$313'
 DEBUG = True
 
 #ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['next-project-amir-2.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['next-project-amir-2.herokuapp.com', 'localhost', 'dev.letscan.me']
 
 # Application definition
 
