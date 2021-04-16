@@ -2,5 +2,5 @@ django
 gunicorn
 psycopg2
 psycopg2-binary==2.7.6.1
-django-debug-toolbar==1.8
+django-debug-toolbar==1.11.1
 django-heroku
